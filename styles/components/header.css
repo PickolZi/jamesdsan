@@ -1,0 +1,119 @@
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: var(--size-base);
+}
+
+/* Header list styles */
+header ul {
+    display: none;
+    flex-direction: row;
+    list-style-type: none;
+    gap: var(--size-base);
+    margin-top: var(--size-base);
+}
+header ul li {
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: transform 0.5s;
+}
+header ul li:hover {
+    transform: translateY(-0.25em);
+}
+header ul li a {
+    text-decoration: none;
+    font-size: var(--size-xl);
+    transition: color 0.3s;
+}
+header ul li a:hover {
+    color: var(--clr-link-hover);
+}
+
+/* Hamburger icon */
+.header__bars {
+    margin-left: auto;
+    margin-top: var(--size-base);
+    margin-right: var(--size-base);
+    width: var(--size-xl);
+    height: var(--size-xl);
+}
+
+/* Header links */
+.header__social-icons {
+    height: var(--size-2xl);
+    width: var(--size-2xl);
+    transition: transform 0.3s;
+}
+.header__social-icons:hover {
+    transform: translateY(-0.25em);
+}
+.header__social-links {
+    margin-right: auto;
+    margin-left: var(--size-base);
+}
+.header__webpage-links {
+    margin-left: auto;
+    margin-right: var(--size-base);
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .header__bars {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .header__bars {
+        width: var(--size-3xl);
+        height: var(--size-3xl);
+    }
+}
+
+/* Changes header from hamburger to default webpage navigation */
+/* md */ 
+@media (min-width: 768px) {
+    .header__social-links, .header__webpage-links {
+        display: flex;
+    }
+    .header__bars {
+        display: none;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    header ul li a {
+        text-decoration: none;
+        font-size: var(--size-2xl);
+    }
+    .header__social-icons {
+        height: var(--size-3xl);
+        width: var(--size-3xl);
+    }
+    header ul {
+        gap: var(--size-lg);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .header__social-icons {
+        height: var(--size-4xl);
+        width: var(--size-4xl);
+    }
+    header ul {
+        gap: var(--size-xl);
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    header ul {
+        gap: var(--size-2xl);
+    }
+} 
