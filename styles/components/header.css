@@ -20,15 +20,15 @@ header ul li {
     transition: transform 0.5s;
 }
 header ul li:hover {
-    transform: translateY(-0.25em);
+    transform: translateY(-0.2em);
 }
 header ul li a {
-    text-decoration: none;
     font-size: var(--size-xl);
-    transition: color 0.3s;
+    /* transition: color 0.3s; */
 }
 header ul li a:hover {
-    color: var(--clr-link-hover);
+    text-decoration: underline;
+    /* color: var(--clr-primary); */
 }
 
 /* Hamburger icon */
@@ -88,8 +88,7 @@ header ul li a:hover {
 /* lg */
 @media (min-width: 1024px) {
     header ul li a {
-        text-decoration: none;
-        font-size: var(--size-2xl);
+        font-size: var(--size-xl);
     }
     .header__social-icons {
         height: var(--size-3xl);
@@ -102,6 +101,9 @@ header ul li a:hover {
 
 /* xl */
 @media (min-width: 1280px) {
+    header ul li a {
+        font-size: var(--size-2xl);
+    }
     .header__social-icons {
         height: var(--size-4xl);
         width: var(--size-4xl);
@@ -113,6 +115,10 @@ header ul li a:hover {
 
 /* 2xl */
 @media (min-width: 1536px) {
+    .header__social-icons {
+        height: var(--size-5xl);
+        width: var(--size-5xl);
+    }
     header ul {
         gap: var(--size-2xl);
     }

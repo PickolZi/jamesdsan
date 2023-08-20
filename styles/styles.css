@@ -19,9 +19,9 @@
     /* Page colors */
     --clr-text: #F1F1F1;
     --clr-background: #0F0F0F;
-    --clr-link: #08bd4e;
-    --clr-link-hover: red;
-    --clr-accent: #FF0000;
+    --clr-primary: #08bd4e;
+    --clr-secondary: #8fb3ff;
+    --clr-accent: #e3df0c;
     --clr-strong: #4f46e5;
 
     /* sizes */
@@ -78,9 +78,14 @@ button {
 }
 
 a {
-    color: var(--clr-link);
+    color: var(--clr-text);
+    text-decoration: none;
 }
 
 strong {
     color: var(--clr-strong)
+}
+
+section {
+    margin-top: 8em;
 }
