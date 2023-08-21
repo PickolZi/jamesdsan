@@ -20,9 +20,9 @@
     --clr-text: #F1F1F1;
     --clr-background: #0F0F0F;
     --clr-primary: #08bd4e;
-    --clr-secondary: #8fb3ff;
+    --clr-secondary: #00B3FF;
     --clr-accent: #e3df0c;
-    --clr-strong: #4f46e5;
+    --clr-strong: #FF4664;
 
     /* sizes */
     --size-xxs: 0.5rem;
@@ -48,9 +48,9 @@
     box-sizing: border-box;
 }
 
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 body {
     background-color: var(--clr-background);
@@ -87,5 +87,5 @@ strong {
 }
 
 section {
-    margin-top: 8em;
+    margin-top: 10em;
 }

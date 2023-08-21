@@ -1,0 +1,9 @@
+footer {
+    text-align: center;
+    user-select: none;
+    /* position: relative; */
+}
+
+#footer__icon-ref {
+    font-size: var(--size-xs);
+}

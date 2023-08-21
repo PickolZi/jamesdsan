@@ -30,7 +30,11 @@
 }
 
 /* sm */
-/* @media (min-width: 640px) {} */
+@media (min-width: 640px) {
+    .hero__title {
+        font-size: var(--size-7xl);
+    }
+}
 
 /* md */
 @media (min-width: 768px) {
@@ -42,7 +46,7 @@
         font-size: var(--size-3xl);
     }
     .hero__title {
-        font-size: var(--size-7xl);
+        font-size: var(--size-8xl);
     }
     .hero__btn {
         font-size: var(--size-lg);
@@ -56,9 +60,6 @@
     }
     .hero__name {
         font-size: var(--size-4xl);
-    }
-    .hero__title {
-        font-size: var(--size-8xl);
     }
 }
 
