@@ -34,7 +34,7 @@
           </li>
         </ul>
 
-        <button class="header__bars">
+        <button id="header__bars" class="header__bars">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
@@ -43,6 +43,43 @@
     </header>
 
     <main>
+      <!-- Mobile-nav section -->
+      <section class="mobile-nav">
+        <ul class="mobile-nav__links">
+          <li>
+            <a class="mobile-nav__clickable" href="https://www.linkedin.com/in/james-san-494b481b2/" target="_blank"><img class="mobile-nav__icons" src="svg/icons8-linkedin.svg" alt="LinkedIn icon"></a>
+          </li>
+          <li>
+            <a class="mobile-nav__clickable" href="https://github.com/PickolZi" target="_blank"><img class="mobile-nav__icons" src="svg/icons8-github.svg" alt="Github icon"></a>
+          </li>
+          <li>
+            <!-- <button class="btn secondary"><a href="https://www.google.com">Resume</a></button> -->
+            <a class="mobile-nav__clickable" href="https://drive.google.com/file/d/1TM-ZF3HjW47lkLJvjlLDGiyNjnojRPQ3/view?usp=drive_link" target="_blank">Resume</a>
+          </li>
+        </ul>
+
+        <hr class="mobile-nav__separator">
+
+        <ul class="mobile-nav__links">
+          <li>
+            <a class="mobile-nav__clickable" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="mobile-nav__clickable" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__clickable" href="#projects">Projects</a>
+          </li>
+        </ul>
+
+        <button class="mobile-nav__clickable mobile-nav__exit">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>          
+        </button>
+
+      </section>
+
       <!-- Hero section -->
       <section id="home" class="hero container">
         <img class="hero__img" src="/james.jpg" alt="A picture of me">
