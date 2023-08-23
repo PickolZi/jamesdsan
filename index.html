@@ -11,10 +11,10 @@
     <header class="header">
         <ul class="header__social-links">
           <li>
-            <a href="https://www.linkedin.com/in/james-san-494b481b2/" target="_blank"><img class="header__social-icons" src="svg/icons8-linkedin.svg" alt="LinkedIn icon"></a>
+            <a href="https://www.linkedin.com/in/james-san-494b481b2/" target="_blank"><img class="header__social-icons" src="svg/linkedin.svg" alt="LinkedIn icon"></a>
           </li>
           <li>
-            <a href="https://github.com/PickolZi" target="_blank"><img class="header__social-icons" src="svg/icons8-github.svg" alt="Github icon"></a>
+            <a href="https://github.com/PickolZi" target="_blank"><img class="header__social-icons" src="svg/github.svg" alt="Github icon"></a>
           </li>
           <li>
             <!-- <button class="btn secondary"><a href="https://www.google.com">Resume</a></button> -->
@@ -47,10 +47,10 @@
       <section class="mobile-nav">
         <ul class="mobile-nav__links">
           <li>
-            <a class="mobile-nav__clickable" href="https://www.linkedin.com/in/james-san-494b481b2/" target="_blank"><img class="mobile-nav__icons" src="svg/icons8-linkedin.svg" alt="LinkedIn icon"></a>
+            <a class="mobile-nav__clickable" href="https://www.linkedin.com/in/james-san-494b481b2/" target="_blank"><img class="mobile-nav__icons" src="svg/linkedin.svg" alt="LinkedIn icon"></a>
           </li>
           <li>
-            <a class="mobile-nav__clickable" href="https://github.com/PickolZi" target="_blank"><img class="mobile-nav__icons" src="svg/icons8-github.svg" alt="Github icon"></a>
+            <a class="mobile-nav__clickable" href="https://github.com/PickolZi" target="_blank"><img class="mobile-nav__icons" src="svg/github.svg" alt="Github icon"></a>
           </li>
           <li>
             <!-- <button class="btn secondary"><a href="https://www.google.com">Resume</a></button> -->
@@ -91,11 +91,17 @@
       <!-- About section -->
       <section id="about" class="about container">
         <div class="about__contents">
-          <h1 class="about__contents-title">About</h1>
+          <h1 class="about__contents-title">About Me</h1>
           <p class="about__contents-description">
-            Hi, my name is James San, I am a college student based in Rosemead, California pursuring my Computer Science Degree. 
+            Hello! My name is <strong>James San</strong>, a college sophomore based in Rosemead, California. I am mostly self-taught, driven by my interest in learning new web technologies. 
             <br><br>
-            Some of my hobbies outside of programming include: playing games, watching anime, and reading.
+            Under <strong>Tech Stack</strong> you can see the technologies I taught myself as well as what I will learn in the near future. 
+            <br><br>       
+            Some of my favorite hobbies outside of programming include playing games, watching anime, reading, and hanging out with friends :D.
+            <br><br>
+            Although my website is basic right now, I plan on updating it a lot more in the future as I gain more experience and learn more technologies. Do feel free to leave some criticism by sending me an email from the above <strong>Contact Me</strong> button. 
+            <br><br>
+            Thank you!
           </p>
         </div>
 
@@ -104,16 +110,44 @@
           <div class="about__tech-stack-wrapper">
             <div class="about__tech-stack-front tech-stack-row">
               <h3>Front-end</h3>
+
+              <div class="about__tech-stack-front-content about__tech-stack-dropdown" style="display: none;">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/html.svg" title="HTML5" alt="HTML5 svg icon">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/css.svg" title="CSS3" alt="CSS3 svg icon">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/javascript.svg" title="Javascript" alt="Javascript svg icon">
+              </div>
             </div>
+
             <div class="about__tech-stack-back tech-stack-row">
               <h3>Back-end</h3>
+
+              <div class="about__tech-stack-back-content about__tech-stack-dropdown" style="display: none;">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/python.svg" title="Python" alt="Python svg icon">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/flask.svg" title="Flask" alt="Flask svg icon">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/java.svg" title="Java" alt="Java svg icon">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/mysql.svg" title="MySQL" alt="MySQL svg icon">
+              </div>
             </div>
+
             <div class="about__tech-stack-tools tech-stack-row">
               <h3>Tools</h3>
+
+              <div class="about__tech-stack-tools-content about__tech-stack-dropdown" style="display: none;">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/docker.svg" title="Docker" alt="Docker svg icon">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/github.svg" title="Github" alt="Github svg icon">
+              </div>
             </div>
+
             <div class="about__tech-stack-future-learning tech-stack-row">
               <h3>Future Learning</h3>
+
+              <div class="about__tech-stack-future-learning-content about__tech-stack-dropdown" style="display: none;">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/react-native.svg" title="React" alt="React svg icon">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/tailwind-css.svg" title="Tailwind CSS" alt="Tailwind CSS svg icon">
+                <img class="about__tech-stack-content-svg" src="/svg/languages/aws.svg" title="AWS" alt="AWS svg icon">
+              </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -128,7 +162,13 @@
 
             <div class="projects__contents">
               <h3 class="projects__contents-title">Spotify Music Downloader</h3>
-              <p class="projects__contents-description">The <strong>Spotify Music Downloader</strong> is a web application I created using Flask and Spotfiy's Developer API, and Docker to download music.</p>
+              <p class="projects__contents-description">
+                Using the light weight framework Flask in the backend, I was able to develop the <strong>Spotify Music Downloader</strong>. This web application allows the client to browse any Spotify User's profile and download the playlist onto their computer.
+                <br><br>
+                Building this web application taught me a lot in developing fullstack applications. 
+                <br><br>
+                Using <strong>Flask</strong> for the backend, plain <strong>HTML</strong> and <strong>CSS</strong> for the frontend, fetching data from <strong>Spotfiy's Developer API</strong>, using <strong>Celery</strong> and <strong>redis</strong> as a task queue and quick cache database to store and process the queues for the client's downloads, and lastly <strong>Docker</strong> in order to easily containerize and run different processes by simply running "docker compose up".
+              </p>
               <button class="btn projects__contents-livedemo">Live Demo</button>
               <div class="projects__contents-languages">
                 <img src="svg/languages/html.svg" alt="HTML programming language" title="HTML5">

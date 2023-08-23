@@ -11,5 +11,7 @@ import '../styles/styles.css'
 
 // JavaScript
 import mobileNavActivator from './utils/mobile-nav';
+import techStackDropDownMenu from './utils/tech-stack-dropdown'
 
 mobileNavActivator();
+techStackDropDownMenu();

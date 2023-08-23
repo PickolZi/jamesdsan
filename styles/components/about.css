@@ -43,13 +43,62 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    height: 100%;
+}
+.tech-stack-row:hover {
+    /* box-shadow: 10px 10px 10px rgba(0, 255, 0, 0.2); */
+    /* border-bottom: 1px solid var(--clr-secondary); */
+    filter: brightness(0.95);
+}
+.dropdown-animation {
+    animation: dropdown-animation 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+@keyframes dropdown-animation {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/* Tech-stack dropdown languages */
+.about__tech-stack-dropdown {
+    margin-top: var(--size-xxs);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 200px;
+    background-color: var(--clr-secondary);
+    filter: brightness(80%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-base);
+}
+.about__tech-stack-content-svg {
+    width: var(--size-6xl);
+    height: var(--size-6xl);
+    transition: all 0.3s;
+}
+.about__tech-stack-content-svg:hover {
+    transform: translateY(-0.5em);
 }
 
 /* xs */
 /* @media (min-width: 475px) {} */
 
 /* sm */
-/* @media (min-width: 640px) {} */
+@media (min-width: 640px) {
+    .about__tech-stack-content-svg {
+        width: var(--size-7xl);
+        height: var(--size-7xl);
+    }
+}
 
 /* md */
 @media (min-width: 768px) {
@@ -60,12 +109,20 @@
     .about__contents-title, .about__tech-stack-title {
         font-size: var(--size-3xl);
     }
+    .about__tech-stack-content-svg {
+        width: var(--size-6xl);
+        height: var(--size-6xl);
+    }
 }
 
 /* lg */
 @media (min-width: 1024px) {
     .about__contents-title, .about__tech-stack-title {
         font-size: var(--size-4xl);
+    }
+    .about__tech-stack-content-svg {
+        width: var(--size-7xl);
+        height: var(--size-7xl);
     }
 }
 
@@ -80,4 +137,9 @@
 }
 
 /* 2xl */
-/* @media (min-width: 1536px) {}  */
+@media (min-width: 1536px) {
+    .about__tech-stack-content-svg {
+        width: var(--size-8xl);
+        height: var(--size-8xl);
+    }
+} 
