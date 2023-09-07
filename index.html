@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Development Site</title>
+    <title>James San | Portfolio</title>
   </head>
   <body>
     <!-- Header -->
@@ -97,9 +97,7 @@
             <br><br>
             Under <strong>Tech Stack</strong> you can see the technologies I taught myself as well as what I will learn in the near future. 
             <br><br>       
-            Some of my favorite hobbies outside of programming include playing games, watching anime, reading, and hanging out with friends :D.
-            <br><br>
-            Although my website is basic right now, I plan on updating it a lot more in the future as I gain more experience and learn more technologies. Do feel free to leave some criticism by sending me an email from the above <strong>Contact Me</strong> button. 
+            Although my website is basic right now, I plan on updating it a lot more in the future as I gain more experience and learn more technologies. Do feel free to leave some criticism by sending me an email from the <strong>Contact Me</strong> button above. 
             <br><br>
             Thank you!
           </p>
@@ -157,19 +155,25 @@
         <h1 class="projects__title">Projects</h1>
 
         <div class="projects__wrapper">
+          <!-- Project 1 -->
           <div class="projects__project">
-            <img src="/project-1.png" alt="Showcasing my Flask Spotify Music Downloader" class="projects__img">
+            <a class="projects__img-wrapper" href="http://45.33.33.207/" target="_blank">
+              <img class="projects__img" src="/project-1.png" alt="Showcasing my Flask Spotify Music Downloader">
+            </a>
 
             <div class="projects__contents">
               <h3 class="projects__contents-title">Spotify Music Downloader</h3>
               <p class="projects__contents-description">
-                Using the light weight framework Flask in the backend, I was able to develop the <strong>Spotify Music Downloader</strong>. This web application allows the client to browse any Spotify User's profile and download the playlist onto their computer.
+                Spotify Music Downloader is a flask web application I created in order to download any or all spotify songs from any Spotify user's playlists.
                 <br><br>
-                Building this web application taught me a lot in developing fullstack applications. 
+                It works by taking in a Spotify user's id you see when you visit their user page on Spotify and displays all of their visible playlists. From there you are able to select which songs you want and download them, quick and easy!
                 <br><br>
-                Using <strong>Flask</strong> for the backend, plain <strong>HTML</strong> and <strong>CSS</strong> for the frontend, fetching data from <strong>Spotfiy's Developer API</strong>, using <strong>Celery</strong> and <strong>redis</strong> as a task queue and quick cache database to store and process the queues for the client's downloads, and lastly <strong>Docker</strong> in order to easily containerize and run different processes by simply running "docker compose up".
+                If you want a more technical overview of how this project works, click the github icon down below to view the source code.
               </p>
-              <button class="btn projects__contents-livedemo">Live Demo</button>
+              <div class="projects__contents-links">
+                <button class="btn projects__contents-livedemo"><a href="http://45.33.33.207/" target="_blank">Live Demo</a></button>
+                <a class="projects__contents-github" href="https://github.com/PickolZi/flask-spotify-music-downloader" target="_blank"><img src="./svg/github.svg" alt="github link to Spotify-music-downloader project"></a>
+              </div>
               <div class="projects__contents-languages">
                 <img src="svg/languages/html.svg" alt="HTML programming language" title="HTML5">
                 <img src="svg/languages/css.svg" alt="CSS programming language" title="CSS">
@@ -178,8 +182,34 @@
                 <img src="svg/languages/docker.svg" alt="Docker containers" title="Docker">
               </div>
             </div>
-
           </div>
+
+          <!-- Project 2 -->
+          <div class="projects__project">
+            <a class="projects__img-wrapper" href="https://www.jamesdsan.com/" target="_blank">
+              <img class="projects__img" src="/project-2.png" alt="Showcasing my Flask Spotify Music Downloader">
+            </a>
+
+            <div class="projects__contents">
+              <h3 class="projects__contents-title">My Portfolio Website</h3>
+              <p class="projects__contents-description">
+                This project right here is just the site you are currently viewing! 
+                <br><br>
+                I built this portfolio to practice my front-end development skills. I know it's not much yet, but I do plan on learning more about colors, layouts, fonts, and animation in the near future.
+                
+              </p>
+              <div class="projects__contents-links">
+                <button class="btn projects__contents-livedemo"><a href="http://jamesdsan.com/" target="_blank">Live Demo</a></button>
+                <a class="projects__contents-github" href="https://github.com/PickolZi/jamesdsan" target="_blank"><img src="./svg/github.svg" alt="github link to Spotify-music-downloader project"></a>
+              </div>
+              <div class="projects__contents-languages">
+                <img src="svg/languages/html.svg" alt="HTML programming language" title="HTML5">
+                <img src="svg/languages/css.svg" alt="CSS programming language" title="CSS">
+                <img src="svg/languages/javascript.svg" alt="Javascript programming language" title="Javascript">
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
