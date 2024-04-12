@@ -2,8 +2,8 @@
 
 const Experience = () => {
     return (
-        <section className="h-screen">
-            <h1>Experience section</h1>
+        <section>
+            <h1>Experience</h1>
         </section>
     )
 }

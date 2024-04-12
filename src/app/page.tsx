@@ -1,4 +1,6 @@
+import Title from "@/components/title.component";
 import AboutMe from "@/components/aboutMe.component";
+import TechStack from "@/components/techStack.component";
 import Experience from "@/components/experience.component";
 import Projects from "@/components/projects.component";
 import Links from "@/components/links.component";
@@ -14,8 +16,11 @@ export default function Home() {
       <div className="h-screen w-screen bg-black fixed top-0 left-0 opacity-75 z-0" />
 
       <VerticalProgressBar />
+      {/* <div className="relative h-[50vh] w-screen" /> */}
 
+      <Title />
       <AboutMe />
+      <TechStack />
       <Experience />
       <Projects />
       <Links />

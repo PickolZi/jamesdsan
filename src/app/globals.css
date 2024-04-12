@@ -7,6 +7,6 @@
         @apply text-white;
     }
     section {
-        @apply relative ml-[1rem] md:ml-[2rem] lg:ml-[4rem] xl:ml-[8rem];
+        @apply relative ml-[1rem] md:ml-[2rem] lg:ml-[4rem] xl:ml-[8rem] h-screen flex flex-col justify-center;
     }
 }
