@@ -1,8 +1,8 @@
 import Title from "@/components/title.component";
 import AboutMe from "@/components/aboutMe.component";
 import TechStack from "@/components/techStack.component";
-import Experience from "@/components/experience.component";
-import Projects from "@/components/projects.component";
+import ExperienceList from "@/components/experienceList.component";
+import ProjectsList from "@/components/projectsList.component";
 import Links from "@/components/links.component";
 
 import VerticalProgressBar from "@/components/verticalProgressBar.component";
@@ -21,8 +21,8 @@ export default function Home() {
       <Title />
       <AboutMe />
       <TechStack />
-      <Experience />
-      <Projects />
+      <ExperienceList />
+      <ProjectsList />
       <Links />
 
     </>
