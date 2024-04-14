@@ -1,13 +1,5 @@
+import { ProjectType } from "./types";
 
-type props = {
-    title: String,
-    desc: String,
-    date: Date,
-    image: String,
-    languages: String[],
-    github: String,
-    link: String,
-}
 
 const Project = ({
     title, 
@@ -17,7 +9,7 @@ const Project = ({
     languages,
     github,
     link,
-}:props) => {
+}:ProjectType) => {
     return (
         <div>
             <h1>Project: </h1>
