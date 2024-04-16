@@ -1,6 +1,5 @@
-// Typescript types.
-
 export type ExperienceType = {
+    id: number,
     title: String,
     desc: String,
     image: String,
@@ -9,6 +8,7 @@ export type ExperienceType = {
 }
 
 export type ProjectType = {
+    id: number,
     title: String,
     desc: String,
     date: Date,

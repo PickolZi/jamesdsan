@@ -2,6 +2,7 @@ import { ProjectType } from "./types";
 
 
 const Project = ({
+    id,
     title, 
     desc, 
     date, 
@@ -13,6 +14,7 @@ const Project = ({
     return (
         <div>
             <h1>Project: </h1>
+            <p>id: {id.toFixed()}</p>
             <p>title: {title}</p>
             <p>desc: {desc}</p>
             <p>date: {date.toUTCString()}</p>

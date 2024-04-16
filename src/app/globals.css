@@ -7,6 +7,6 @@
         @apply text-white;
     }
     section {
-        @apply relative ml-[1rem] md:ml-[2rem] lg:ml-[4rem] xl:ml-[8rem] h-screen flex flex-col justify-center;
+        @apply relative mx-[1rem] md:mx-[2rem] lg:mx-[4rem] xl:mx-[8rem] h-screen flex flex-col justify-center text-center;
     }
 }
