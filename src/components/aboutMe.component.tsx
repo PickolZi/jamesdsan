@@ -1,22 +1,16 @@
 "use client"
 import Image from "next/image";
 
-import CharactersPopUp from "./framer_components/CharactersPopUp.component";
+import CharactersPopUp from "./framer_components/charactersPopUp.component";
 import {motion} from 'framer-motion';
 
 
 const AboutMe = () => {
     return (
         <section>
-            <motion.h1 
-                className="text-2xl"
-                initial={{opacity: 0}}
-                animate={{opacity: 1}}
-                transition={{duration: 1, ease: "anticipate"}}
-            >
-                About Me
-            </motion.h1>
-            <CharactersPopUp text="asdfjkl" />
+            <h1 className="text-2xl">
+                <CharactersPopUp text="About Me" />
+            </h1>
             
 
             <div>
