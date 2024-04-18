@@ -2,13 +2,17 @@ import TypeAnimate from "./framer_components/typeAnimate.component";
 
 
 const Title = () => {
+
+    const typingTexts = [
+        "Full Stack Developer",
+        "Undergraduate Computer Science Student",
+        "Continuous Learner"
+    ]
+
     return (
         <section>
-            <TypeAnimate text="James San" />
-            <h1>Hi, i&apos;m james san</h1>
-            <h2>Full Stack Developer</h2>
-            <h2>Undergraduate Computer Science Student</h2>
-            <h2>Continuous Learner</h2>
+            <h1 className="text-4xl">James San</h1>
+            <TypeAnimate typingTexts={typingTexts} />
         </section>
     )
 }

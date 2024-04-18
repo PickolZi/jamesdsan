@@ -1,33 +1,41 @@
 "use client"
 import { useEffect } from "react";
-import { motion, animate, useMotionValue, useTransform } from "framer-motion";
+import { motion, animate, useMotionValue, useTransform, useMotionValueEvent } from "framer-motion";
 import CursorBlink from "./cursorBlink.component";
 
 
 type props = {
-    text: string
+    typingTexts: string[]
 }
 
-const TypeAnimate = ({text}:props) => {
-    const textLength = text.length;
-    const count = useMotionValue(0);
+const TypeAnimate = ({typingTexts}:props) => {
+    let index = 0
+    let text = typingTexts[0];
 
+    let count = useMotionValue(0);
+    let rounded = useTransform(count, (round) => Math.round(round))
+    let displayText = useTransform(rounded, (latest) => text.slice(0, latest))
+    
     useEffect(() => {
-        const controls = animate(count, textLength, {
-            duration: 1
-        });
-
-        // return controls.stop;
+        animate(count, text.length, {duration: 2});
     }, [])
 
-    const rounded = useTransform(count, (round) => Math.round(round))
-    const displayText = useTransform(rounded, (latest) => text.slice(0, latest))
+    useMotionValueEvent(count, "animationComplete", () => {
+        if (count.get() == 0) {
+            index++;
+            text = typingTexts[index % typingTexts.length];
+
+            animate(count, text.length, {delay: 1, duration: 2});
+        } else if (count.get() == text.length) {
+            animate(count, 0, {delay: 1, duration: 2})
+        }
+    });
 
     return (
-        <h1>
-            <motion.span>{displayText}</motion.span>
+        <span className="inline text-2xl ">
+            <motion.span className="text-gray-500">{displayText}</motion.span>
             <CursorBlink />
-        </h1>
+        </span>
     )
 }
 
