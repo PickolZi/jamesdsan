@@ -1,3 +1,6 @@
+"use client"
+import CharactersPopUp from "./framer_components/charactersPopUp.component";
+
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
@@ -7,7 +10,10 @@ import { IoNewspaper } from "react-icons/io5";
 const Links = () => {
     return (
         <section>
-            <h1>Learn more about me...</h1>
+            <h1 className="text-2xl">
+                <CharactersPopUp text="Learn more about me..." />
+            </h1>
+
             <ul className="flex flex-row gap-4">
                 <li>
                     <a href="#">

@@ -10,6 +10,7 @@ const AboutMe = () => {
         <section>
             <h1 className="text-2xl">
                 <CharactersPopUp text="About Me" />
+                {/* <span className="translate-y-[1rem] inline-block">hi</span> */}
             </h1>
             
 

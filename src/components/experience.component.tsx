@@ -1,4 +1,4 @@
-
+"use client"
 import { ExperienceType } from "./types";
 
 const Experience = ({

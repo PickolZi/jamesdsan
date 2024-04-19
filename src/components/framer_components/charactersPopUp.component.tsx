@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { jsx } from "react/jsx-runtime";
 
 
 type Props = {
@@ -10,22 +9,24 @@ const CharactersPopUp = ({text}:Props) => {
     let charDelay = 0;
 
     return (
-        <div>
+        <div className="overflow-hidden">
             {text.split(" ").map((word) => {
                 const res = (word.split("").map((char) => {
                     charDelay += 0.1;  // Character delay of 100ms.
                     return (
                         <motion.span
+                            className="inline-block"
                             initial={{
                                 opacity: 0,
-                                translateY: "16px"
+                                translateY: "100%"
                             }}
-                            animate={{
+                            whileInView={{
                                 opacity: 1,
                                 translateY: "0%"
                             }}
+                            viewport={{once: true}}
                             transition={{
-                                duration: 3,
+                                duration: 0.5,
                                 delay: charDelay
                             }}
                         >
