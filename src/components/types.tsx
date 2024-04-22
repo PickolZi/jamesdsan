@@ -1,10 +1,11 @@
 export type ExperienceType = {
     id: number,
-    title: String,
+    position: String,
+    location?: String,
     desc: String,
-    image: String,
+    image: string,
     dateFrom?: Date,
-    dateTo: Date,
+    dateTo?: Date,
 }
 
 export type ProjectType = {
@@ -12,7 +13,7 @@ export type ProjectType = {
     title: String,
     desc: String,
     date: Date,
-    image: String,
+    image: string,
     languages: String[],
     github: String,
     link: String,

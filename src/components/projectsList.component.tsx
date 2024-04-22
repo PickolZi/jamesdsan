@@ -33,7 +33,7 @@ const ProjectsList = () => {
     ]
 
     return (
-        <section>
+        <section className="h-auto">
             <h1 className="text-2xl">
             <CharactersPopUp text="Personal Projects List" />
             </h1>

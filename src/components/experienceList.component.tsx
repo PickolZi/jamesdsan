@@ -10,32 +10,35 @@ const ExperienceList = () => {
     const experiences:ExperienceType[] = [
         {
             id: 1,
-            title: "San Diego Super Computer(SDSC)",
-            desc: "TBD",
-            image: "https://www.randomImage.com/",
+            position: "Research Data Services Intern",
+            location: "San Diego Super Computer(SDSC)",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet dignissimos aliquid ullam est facilis, ex aperiam fuga aliquam dolores praesentium voluptate ut debitis iste optio earum esse ducimus sequi!",
+            image: "/experiences/SDSC.jpeg",
             dateFrom: new Date(2024,2,20),
-            dateTo: new Date(2024,2,20)
+            dateTo: undefined
         },
-        {
-            id: 2,
-            title: "Freelancer",
-            desc: "TBD",
-            image: "https://www.randomImage.com/",
-            dateFrom: new Date(2024,2,20),
-            dateTo: new Date(2024,2,20)
-        },
-        {
-            id: 3,
-            title: "Math Engineering Science Achievement(MESA) President",
-            desc: "Taught programming and introduced opportunities within the Science, Technology, Engineering, and Math(STEM) field to low-incomed high school students.",
-            image: "https://www.randomImage.com/",
-            dateFrom: new Date(2024,2,20),
-            dateTo: new Date(2024,2,20)
-        }
+        // {
+        //     id: 2,
+        //     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet dignissimos aliquid ullam est facilis, ex aperiam fuga aliquam dolores praesentium voluptate ut debitis iste optio earum esse ducimus sequi!",
+        //     location: "Freelancer",
+            // position: "",
+        //     image: "https://www.randomImage.com/",
+        //     dateFrom: new Date(2024,2,20),
+        //     dateTo: new Date(2024,2,20)
+        // },
+        // {
+        //     id: 3,
+        //     desc: "Taught programming and introduced opportunities within the Science, Technology, Engineering, and Math(STEM) field to low-incomed high school students.",
+        //     location: "Math Engineering Science Achievement(MESA) President",
+            // position: "",
+        //     image: "https://www.randomImage.com/",
+        //     dateFrom: new Date(2024,2,20),
+        //     dateTo: new Date(2024,2,20)
+        // }
     ]
 
     return (
-        <section>
+        <section className="h-auto">
             <h1 className="text-2xl">
                 <CharactersPopUp text="Experience List" />
             </h1>
@@ -45,7 +48,8 @@ const ExperienceList = () => {
                         <Experience
                             key={experience["id"]}
                             id={experience["id"]}
-                            title={experience["title"]}
+                            position={experience["position"]}
+                            location={experience["location"]}
                             desc={experience["desc"]}
                             image={experience["image"]}
                             dateFrom={experience["dateFrom"]}

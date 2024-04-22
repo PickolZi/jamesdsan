@@ -22,6 +22,7 @@ export default function Home() {
       <AboutMe />
       <TechStack />
       <ExperienceList />
+      <div className="h-[50vh]"></div>
       <ProjectsList />
       <Links />
 
