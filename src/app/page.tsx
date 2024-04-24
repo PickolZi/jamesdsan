@@ -13,7 +13,9 @@ export default function Home() {
     <>
       {/* Setting background and a filter over it */}
       <div className="h-screen w-screen bg-[url('/background.png')] fixed top-0 left-0 bg-cover bg-center z-0" />
-      <div className="h-screen w-screen bg-black fixed top-0 left-0 opacity-75 z-0" />
+      {/* <div className="h-screen w-screen bg-black fixed top-0 left-0 opacity-75 z-0" /> */}
+      <div className="h-screen w-screen bg-neutral-900 fixed top-0 left-0 z-0 opacity-75" />
+
 
       <VerticalProgressBar />
       {/* <div className="relative h-[50vh] w-screen" /> */}

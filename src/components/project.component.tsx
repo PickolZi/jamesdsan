@@ -1,9 +1,17 @@
 import { ProjectType } from "./types";
 
+import { FaGithub } from "react-icons/fa";
+import { HiOutlineExternalLink } from "react-icons/hi";
+
+import Image from "next/image";
+
+
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 const Project = ({
     id,
-    title, 
+    title,
+    subtitle,
     desc, 
     date, 
     image, 
@@ -12,16 +20,33 @@ const Project = ({
     link,
 }:ProjectType) => {
     return (
-        <div>
-            <h1>Project: </h1>
-            <p>id: {id.toFixed()}</p>
-            <p>title: {title}</p>
-            <p>desc: {desc}</p>
-            <p>date: {date.toUTCString()}</p>
-            <p>image: {image}</p>
-            <p>languages: {languages}</p>
-            <p>github: {github}</p>
-            <p>link: {link}</p>
+        <div className="relative p-4 max-w-[600px] mx-auto">
+            <Image 
+                src={image}
+                alt={`${title} image`}
+                width={300}
+                height={300}
+                className="w-full max-w-[600px]"
+            />
+
+            <div className="relative">
+                <p>{title}</p>
+                <p>{subtitle}</p>
+                <p className="max-w-[60ch]">{desc}</p>
+
+                <p className="absolute top-0 right-0">{months[date.getMonth()]} {date.getFullYear()}</p>
+
+                <div className="flex flex-row">
+                    <a href={github} target="_blank">
+                        <FaGithub size={32} />
+                    </a>
+                    <a href={link} target="_blank">
+                        <HiOutlineExternalLink size={32} />
+                    </a>
+                </div>
+
+                <p className="absolute bottom-0 right-0">{languages}</p>
+            </div>
         </div>
     )
 }

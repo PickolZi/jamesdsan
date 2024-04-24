@@ -11,7 +11,7 @@ const ExperienceList = () => {
         {
             id: 1,
             position: "Research Data Services Intern",
-            location: "San Diego Super Computer(SDSC)",
+            location: "San Diego Super Computer (SDSC)",
             desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet dignissimos aliquid ullam est facilis, ex aperiam fuga aliquam dolores praesentium voluptate ut debitis iste optio earum esse ducimus sequi!",
             image: "/experiences/SDSC.jpeg",
             dateFrom: new Date(2024,2,20),
@@ -20,18 +20,18 @@ const ExperienceList = () => {
         // {
         //     id: 2,
         //     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet dignissimos aliquid ullam est facilis, ex aperiam fuga aliquam dolores praesentium voluptate ut debitis iste optio earum esse ducimus sequi!",
-        //     location: "Freelancer",
-            // position: "",
-        //     image: "https://www.randomImage.com/",
+        //     location: "",
+        //     position: "Freelancer",
+        //     image: "/experiences/SDSC.jpeg",
         //     dateFrom: new Date(2024,2,20),
         //     dateTo: new Date(2024,2,20)
         // },
         // {
         //     id: 3,
         //     desc: "Taught programming and introduced opportunities within the Science, Technology, Engineering, and Math(STEM) field to low-incomed high school students.",
-        //     location: "Math Engineering Science Achievement(MESA) President",
-            // position: "",
-        //     image: "https://www.randomImage.com/",
+        //     location: "San Gabriel High School",
+        //     position: "Math Engineering Science Achievement(MESA) President",
+        //     image: "/experiences/SDSC.jpeg",
         //     dateFrom: new Date(2024,2,20),
         //     dateTo: new Date(2024,2,20)
         // }
@@ -39,7 +39,7 @@ const ExperienceList = () => {
 
     return (
         <section className="h-auto">
-            <h1 className="text-2xl">
+            <h1 className="text-2xl text-center">
                 <CharactersPopUp text="Experience List" />
             </h1>
             {

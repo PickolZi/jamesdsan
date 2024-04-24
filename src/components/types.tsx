@@ -11,10 +11,11 @@ export type ExperienceType = {
 export type ProjectType = {
     id: number,
     title: String,
+    subtitle: String,
     desc: String,
     date: Date,
     image: string,
     languages: String[],
-    github: String,
-    link: String,
+    github: string,
+    link: string,
 }
