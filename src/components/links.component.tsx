@@ -14,25 +14,25 @@ const Links = () => {
                 <CharactersPopUp text="Learn more about me..." />
             </h1>
 
-            <ul className="flex flex-row gap-4">
+            <ul className="flex flex-row gap-4 max-w-[600px]">
                 <li>
                     <a href="#">
-                        <FaLinkedin size={100} />
+                        <FaLinkedin size="full"/>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <FaGithub size={100} />
+                        <FaGithub size="full" />
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <SiLeetcode size={100} />
+                        <SiLeetcode size="full" />
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <IoNewspaper size={100} />
+                        <IoNewspaper size="full" />
                     </a>
                 </li>
             </ul>
