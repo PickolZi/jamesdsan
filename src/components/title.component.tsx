@@ -1,4 +1,5 @@
 import TypeAnimate from "./framer_components/typeAnimate.component";
+import ScrollDownIndicator from "./framer_components/scrollDownIndicator.component";
 
 
 const Title = () => {
@@ -13,6 +14,7 @@ const Title = () => {
         <section>
             <h1 className="text-4xl">James San</h1>
             <TypeAnimate typingTexts={typingTexts} />
+            <ScrollDownIndicator />
         </section>
     )
 }

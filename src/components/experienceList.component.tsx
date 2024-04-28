@@ -38,7 +38,7 @@ const ExperienceList = () => {
     ]
 
     return (
-        <section className="h-auto">
+        <section>
             <h1 className="text-2xl text-center">
                 <CharactersPopUp text="Experience List" />
             </h1>

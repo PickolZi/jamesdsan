@@ -17,16 +17,16 @@ export default function Home() {
       <div className="h-screen w-screen bg-neutral-900 fixed top-0 left-0 z-0 opacity-75" />
 
 
-      <VerticalProgressBar />
+      {/* <VerticalProgressBar /> */}
       {/* <div className="relative h-[50vh] w-screen" /> */}
-
-      <Title />
-      <AboutMe />
-      <TechStack />
-      <ExperienceList />
-      <div className="h-[50vh]"></div>
-      <ProjectsList />
-      <Links />
+      <div className="h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth">
+        <Title />
+        <AboutMe />
+        <TechStack />
+        <ExperienceList />
+        <ProjectsList />
+        <Links />
+      </div>
 
     </>
   );
