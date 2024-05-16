@@ -16,22 +16,22 @@ const Links = () => {
 
             <ul className="flex flex-row gap-4 max-w-[600px]">
                 <li>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/james-san-494b481b2/" target="_blank">
                         <FaLinkedin size="full"/>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://github.com/PickolZi" target="_blank">
                         <FaGithub size="full" />
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                {/* <li>
+                    <a href="#" target="_blank">
                         <SiLeetcode size="full" />
                     </a>
-                </li>
+                </li> */}
                 <li>
-                    <a href="#">
+                    <a href="https://drive.google.com/file/d/17VIidg5zEencKOimlHa-tpipZD0tAUM0/view?sp=drive_link" target="_blank">
                         <IoNewspaper size="full" />
                     </a>
                 </li>
