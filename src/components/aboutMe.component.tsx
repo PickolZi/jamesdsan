@@ -1,8 +1,10 @@
 "use client"
 import Image from "next/image";
+import {motion} from 'framer-motion';
 
 import CharactersPopUp from "./framer_components/charactersPopUp.component";
-import {motion} from 'framer-motion';
+import HorizontalScrollContainer from "./framer_components/horizontalScrollContainer.component";
+import HorizontalScrollCard from "./framer_components/horizontalScrollCard.component";
 
 
 const AboutMe = () => {
@@ -12,37 +14,55 @@ const AboutMe = () => {
                 <CharactersPopUp text="About Me" />
             </h1>
             
+            <HorizontalScrollContainer>
+                <HorizontalScrollCard>
+                    <Image 
+                        src={"/aboutMe/meProm.jpg"}
+                        alt="Picture of me gazing at the stars"
+                        width={300}
+                        height={300}
+                        className="relative mx-auto rounded-md w-[300px] h-[300px] object-cover"
+                    />
 
-            <div className="relative flex justify-center">
-                {/* Starts off with one image, then as the user scrolls down, the rest will glide in and replace the previous image. User will be able to hover over specific image to pull the card to the front. */}
-                <Image 
-                    src={"/aboutMe/meProm.jpg"}
-                    alt="Picture of me gazing at the stars"
-                    width={300}
-                    height={300}
-                    className="rounded-md w-[300px] h-[300px] object-cover relative"
-                />
-                {/* <Image 
-                    src={"/aboutMe/books.jpg"}
-                    alt="Picture of me gazing at the stars"
-                    width={300}
-                    height={300}
-                    className="rounded-md w-[300px] h-[300px] object-cover absolute"
-                />
-                <Image 
-                    src={"/aboutMe/meGym.jpg"}
-                    alt="Picture of me gazing at the stars"
-                    width={300}
-                    height={300}
-                    className="rounded-md w-[300px] h-[300px] object-cover absolute "
-                /> */}
-            </div>
+                    <div className="flex flex-col gap-4 max-w-[60ch] mx-auto">
+                        <p className="text-lg text-gray-400">Hi, i&apos;m james!</p>
+                        <p className="text-lg text-gray-400">I am a fullstack developer mostly self-taught through side projects, books, Udemy courses, and YouTube. I am also currently pursuing for my Bachelor&apos;s degree in Computer Science.</p>
+                        <p className="text-lg text-gray-400">In my free time I enjoy creating solutions through code, reading books, exercising, and having fun with friends!</p>
+                    </div>
+                </HorizontalScrollCard>
 
-            <div className="flex flex-col gap-4 max-w-[60ch] mx-auto">
-                <p className="text-lg text-gray-400">Hi, i&apos;m james!</p>
-                <p className="text-lg text-gray-400">I am a fullstack developer mostly self-taught through side projects, books, Udemy courses, and YouTube. I am also currently pursuing for my Bachelor&apos;s degree in Computer Science.</p>
-                <p className="text-lg text-gray-400">In my free time I enjoy creating solutions through code, reading books, exercising, and having fun with friends!</p>
-            </div>
+                <HorizontalScrollCard>
+                    <Image 
+                        src={"/aboutMe/books.jpg"}
+                        alt="Picture of me gazing at the stars"
+                        width={300}
+                        height={300}
+                        className="relative mx-auto rounded-md w-[300px] h-[300px] object-cover"
+                    />
+
+                    <div className="flex flex-col gap-4 max-w-[60ch] mx-auto">
+                        <p className="text-lg text-gray-400">Hi, i&apos;m james!</p>
+                        <p className="text-lg text-gray-400">I am a fullstack developer mostly self-taught through side projects, books, Udemy courses, and YouTube. I am also currently pursuing for my Bachelor&apos;s degree in Computer Science.</p>
+                        <p className="text-lg text-gray-400">In my free time I enjoy creating solutions through code, reading books, exercising, and having fun with friends!</p>
+                    </div>
+                </HorizontalScrollCard>
+                
+                <HorizontalScrollCard>
+                        <Image 
+                        src={"/aboutMe/meGym.jpg"}
+                        alt="Picture of me gazing at the stars"
+                        width={300}
+                        height={300}
+                        className="relative mx-auto rounded-md w-[300px] h-[300px] object-cover"
+                    />
+
+                    <div className="flex flex-col gap-4 max-w-[60ch] mx-auto">
+                        <p className="text-lg text-gray-400">Hi, i&apos;m james!</p>
+                        <p className="text-lg text-gray-400">I am a fullstack developer mostly self-taught through side projects, books, Udemy courses, and YouTube. I am also currently pursuing for my Bachelor&apos;s degree in Computer Science.</p>
+                        <p className="text-lg text-gray-400">In my free time I enjoy creating solutions through code, reading books, exercising, and having fun with friends!</p>
+                    </div>
+                </HorizontalScrollCard>
+            </HorizontalScrollContainer>
             
         </section>
     )

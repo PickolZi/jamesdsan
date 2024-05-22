@@ -14,7 +14,7 @@ const Title = () => {
         <section>
             <h1 className="text-4xl">James San</h1>
             <TypeAnimate typingTexts={typingTexts} />
-            <ScrollDownIndicator />
+            {/* <ScrollDownIndicator /> */}
         </section>
     )
 }
