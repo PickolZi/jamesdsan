@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-    * {
-        @apply text-white;
-    }
-    section {
-        @apply relative mx-[1rem] md:mx-[2rem] lg:mx-[4rem] xl:mx-[8rem] h-screen flex flex-col justify-center;
-    }
+  * {
+    @apply text-white;
+  }
+  section {
+    @apply relative h-screen flex flex-col;
+  }
 }
