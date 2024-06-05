@@ -2,11 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #b7b0b0;
+  --color-secondary: #292829;
+  --color-button-background: #6d6d6d;
+}
+
 @layer base {
   * {
     @apply text-white;
+    font-family: "minecraftRegular";
   }
-  section {
-    @apply relative h-screen flex flex-col;
+}
+
+@layer components {
+  .titleText {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+      2px 2px 0 var(--color-secondary), 3px 3px 0 var(--color-secondary),
+      4px 4px 0 var(--color-secondary), 5px 5px 0 var(--color-secondary);
   }
+  .minecraftButton {
+    border: 2px solid black;
+    background-color: var(--color-button-background);
+  }
+}
+
+@font-face {
+  font-family: "minecraftRegular";
+  src: url("../../public/fonts/MinecraftRegular-Bmg3.otf");
+}
+
+@font-face {
+  font-family: "minecraftBold";
+  src: url("../../public/fonts/MinecraftBold-nMK1.otf");
+}
+
+@font-face {
+  font-family: "minecraftEvenings";
+  src: url("../../public/fonts/MinecraftEvenings-lgvPd.ttf");
 }
