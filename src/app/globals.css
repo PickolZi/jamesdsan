@@ -13,6 +13,9 @@
     @apply text-white;
     font-family: "minecraftRegular";
   }
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer components {

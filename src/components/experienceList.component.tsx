@@ -36,8 +36,7 @@ const ExperienceList = () => {
   ];
 
   return (
-    <section>
-      <h1 className="text-2xl text-center">Experience List</h1>
+    <>
       {experiences.map((experience) => {
         return (
           <Experience
@@ -52,7 +51,7 @@ const ExperienceList = () => {
           />
         );
       })}
-    </section>
+    </>
   );
 };
 
