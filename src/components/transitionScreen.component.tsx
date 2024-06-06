@@ -8,7 +8,7 @@ const TransitionScreen = ({
   return (
     <div className="relative h-[150vh]">
       <BackgroundImage imgUrl={imgUrl} />
-      <ContentLayer children={children} />
+      <ContentLayer>{children}</ContentLayer>
     </div>
   );
 };
