@@ -36,22 +36,22 @@ const Options = () => {
   return (
     <div className="flex flex-col min-w-[300px] md:w-[50%] gap-2">
       <a
+        href="#aboutMe"
+        className="minecraftButton md:text-lg md:h-[2rem] lg:h-[3rem] lg:text-2xl hover:border-white flex justify-center items-center"
+      >
+        About Me
+      </a>
+      <a
         href="#experience"
         className="minecraftButton md:text-lg md:h-[2rem] lg:h-[3rem] lg:text-2xl hover:border-white flex justify-center items-center"
       >
         Experience
       </a>
       <a
-        href="#"
+        href="#projects"
         className="minecraftButton md:text-lg md:h-[2rem] lg:h-[3rem] lg:text-2xl hover:border-white flex justify-center items-center"
       >
         Projects
-      </a>
-      <a
-        href="#"
-        className="minecraftButton md:text-lg md:h-[2rem] lg:h-[3rem] lg:text-2xl hover:border-white flex justify-center items-center"
-      >
-        About Me
       </a>
 
       <div className="flex flex-row gap-2 mt-2">

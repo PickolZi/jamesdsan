@@ -44,3 +44,17 @@
   font-family: "minecraftEvenings";
   src: url("../../public/fonts/MinecraftEvenings-lgvPd.ttf");
 }
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border: 2px solid #6b6b6b;
+  border-radius: 0;
+}

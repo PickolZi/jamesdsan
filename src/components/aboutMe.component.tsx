@@ -4,8 +4,6 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <section>
-      <h1 className="text-2xl text-center">About Me</h1>
-
       <div>
         <div>
           <Image
@@ -30,7 +28,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <Image
             src={"/aboutMe/books.jpg"}
             alt="Picture of me gazing at the stars"
@@ -51,9 +49,9 @@ const AboutMe = () => {
               books, exercising, and having fun with friends!
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <Image
             src={"/aboutMe/meGym.jpg"}
             alt="Picture of me gazing at the stars"
@@ -74,7 +72,7 @@ const AboutMe = () => {
               books, exercising, and having fun with friends!
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

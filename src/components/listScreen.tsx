@@ -5,22 +5,21 @@ import dirtBlockDark from "../../public/backgrounds/dirtBlockDark.png";
 import dirtBlockDarkerMid from "../../public/backgrounds/dirtBlockDarkerMid.png";
 
 const ListScreen = ({
-  id,
+  title,
   children,
 }: {
-  id: string;
+  title: string;
   children: React.ReactNode;
 }) => {
   return (
-    <div id={id} className="relative">
-      <BackgroundImage />
-      <TitleLayer title={id} />
+    <div id={title} className="relative h-[150vh]">
+      <Background title={title} />
       <ContentLayer>{children}</ContentLayer>
     </div>
   );
 };
 
-const BackgroundImage = () => {
+const Background = ({ title }: { title: string }) => {
   return (
     <div className="sticky z-0 h-screen top-0 flex flex-col">
       <div
@@ -28,7 +27,9 @@ const BackgroundImage = () => {
         style={{
           backgroundImage: `url(${dirtBlockDark.src})`,
         }}
-      />
+      >
+        <TitleLayer title={title} />
+      </div>
       <div
         className="flex-auto"
         style={{
@@ -51,7 +52,7 @@ const TitleLayer = ({ title }: { title: string }) => {
   };
 
   return (
-    <div className="absolute top-0 w-full flex justify-center items-end h-[128px] text-2xl">
+    <div className="w-full flex justify-center items-end h-[128px] pb-[1rem] text-2xl">
       {capitalizeFirstLetter(title)}
     </div>
   );
@@ -59,8 +60,10 @@ const TitleLayer = ({ title }: { title: string }) => {
 
 const ContentLayer = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="absolute top-[128px] h-[calc(100vh-384px)] flex flex-col justify-center items-center w-full">
-      {children}
+    <div className="z-0 absolute top-[128px] h-[calc(100vh-384px)] w-full flex flex-col items-center">
+      <div className="h-full w-[80%] flex flex-col justify-center items-center overflow-y-auto">
+        {children}
+      </div>
     </div>
   );
 };

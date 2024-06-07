@@ -32,7 +32,6 @@ const ProjectsList = () => {
 
   return (
     <section>
-      <h1 className="text-2xl text-center">Personal Projects List</h1>
       {projects.map((project) => {
         return (
           <Project

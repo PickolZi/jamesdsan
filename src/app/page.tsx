@@ -15,16 +15,25 @@ export default function Home() {
         <Title />
       </TransitionScreen>
       <TransitionScreen imgUrl="https://i.redd.it/841666uly00b1.gif">
+        <h1 className="text-4xl">About Me</h1>
+      </TransitionScreen>
+      <ListScreen title="aboutMe">
+        <AboutMe />
+      </ListScreen>
+      <TransitionScreen imgUrl="https://i.redd.it/841666uly00b1.gif">
         <h1 className="text-4xl">Experience</h1>
       </TransitionScreen>
-      <ListScreen id="experience">
+      <ListScreen title="experience">
         <ExperienceList />
       </ListScreen>
-      <div className="h-screen"></div>
-      {/* <AboutMe />
+      <TransitionScreen imgUrl="https://i.redd.it/841666uly00b1.gif">
+        <h1 className="text-4xl">Projects</h1>
+      </TransitionScreen>
+      <ListScreen title="projects">
+        <ProjectsList />
+      </ListScreen>
       <TechStack />
-      <ProjectsList />
-      <Links /> */}
+      <Links />
     </main>
   );
 }
