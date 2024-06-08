@@ -13,13 +13,14 @@ const ListScreen = ({
 }) => {
   return (
     <div id={title} className="relative h-[150vh]">
-      <Background title={title} />
-      <ContentLayer>{children}</ContentLayer>
+      <Background title={title}>
+        <ContentLayer>{children}</ContentLayer>
+      </Background>
     </div>
   );
 };
 
-const Background = ({ title }: { title: string }) => {
+const Background = ({ title,children }: { title: string, children: React.ReactNode }) => {
   return (
     <div className="sticky z-0 h-screen top-0 flex flex-col">
       <div
@@ -31,13 +32,15 @@ const Background = ({ title }: { title: string }) => {
         <TitleLayer title={title} />
       </div>
       <div
-        className="flex-auto"
+        className="flex-grow flex justify-center"
         style={{
           backgroundImage: `url(${dirtBlockDarkerMid.src})`,
         }}
-      />
+      >
+        {children}
+      </div>
       <div
-        className="h-[256px]"
+        className="h-[128px]"
         style={{
           backgroundImage: `url(${dirtBlockDark.src})`,
         }}
@@ -60,11 +63,9 @@ const TitleLayer = ({ title }: { title: string }) => {
 
 const ContentLayer = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="z-0 absolute top-[128px] h-[calc(100vh-384px)] w-full flex flex-col items-center">
-      <div className="h-full w-[80%] flex flex-col justify-center items-center overflow-y-auto">
+      <div className="h-full overflow-y-auto w-[80%]">
         {children}
       </div>
-    </div>
   );
 };
 

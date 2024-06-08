@@ -5,6 +5,7 @@ const AboutMe = () => {
   return (
     <section>
       <div>
+        <h1 className="text-2xl text-center mb-2">About Me</h1>
         <div>
           <Image
             src={"/aboutMe/meProm.jpg"}

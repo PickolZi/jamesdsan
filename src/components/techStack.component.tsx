@@ -3,7 +3,7 @@
 const TechStack = () => {
   return (
     <section>
-      <h1 className="text-2xl text-center">Tech Stack</h1>
+      {/* <h1 className="text-2xl text-center">Tech Stack</h1> */}
       <div className="flex flex-col gap-2 max-w-[60ch] mx-auto">
         <p className="text-lg text-gray-400">
           Frontend: HTML, CSS, Javascript, Typescript, React, NextJS, Tailwind,

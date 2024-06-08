@@ -56,13 +56,13 @@ const Options = () => {
 
       <div className="flex flex-row gap-2 mt-2">
         <a
-          href="#"
+          href="#techStack"
           className="minecraftButton md:text-lg md:h-[2rem] lg:h-[3rem] lg:text-2xl hover:border-white flex justify-center items-center flex-1"
         >
           Tech Stack...
         </a>
         <a
-          href="#"
+          href="#links"
           className="minecraftButton md:text-lg md:h-[2rem] lg:h-[3rem] lg:text-2xl hover:border-white flex justify-center items-center flex-1"
         >
           Links

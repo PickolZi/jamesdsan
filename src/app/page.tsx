@@ -11,29 +11,33 @@ import Links from "@/components/links.component";
 export default function Home() {
   return (
     <main className="bg-black">
-      <TransitionScreen imgUrl="https://i.pinimg.com/originals/59/0d/73/590d73050637dcb12e9af999f8d6437b.gif">
+      <TransitionScreen id="title" imgUrl="https://i.pinimg.com/originals/59/0d/73/590d73050637dcb12e9af999f8d6437b.gif">
         <Title />
       </TransitionScreen>
-      <TransitionScreen imgUrl="https://i.redd.it/841666uly00b1.gif">
+      <TransitionScreen id="aboutMeTransition" imgUrl="https://i.redd.it/841666uly00b1.gif">
         <h1 className="text-4xl">About Me</h1>
       </TransitionScreen>
-      <ListScreen title="aboutMe">
+      <TransitionScreen id="aboutMe" imgUrl="https://i.pinimg.com/originals/ec/d6/72/ecd67255b08380eb534d3f8ee397bc85.gif">
         <AboutMe />
-      </ListScreen>
-      <TransitionScreen imgUrl="https://i.redd.it/841666uly00b1.gif">
+      </TransitionScreen>
+      <TransitionScreen id="experienceTransition" imgUrl="https://i.redd.it/841666uly00b1.gif">
         <h1 className="text-4xl">Experience</h1>
       </TransitionScreen>
-      <ListScreen title="experience">
+      <TransitionScreen id="experience" imgUrl="https://i.gyazo.com/c3b3a3970256a3fe47622f0a8a367b7e.gif">
         <ExperienceList />
-      </ListScreen>
-      <TransitionScreen imgUrl="https://i.redd.it/841666uly00b1.gif">
+      </TransitionScreen>
+      <TransitionScreen id="projectsTransition" imgUrl="https://i.redd.it/841666uly00b1.gif">
         <h1 className="text-4xl">Projects</h1>
       </TransitionScreen>
-      <ListScreen title="projects">
+      <TransitionScreen id="projects" imgUrl="https://i.pinimg.com/originals/62/b9/c0/62b9c02db463b4b6d07b44919267922a.gif">
         <ProjectsList />
+      </TransitionScreen>
+      <ListScreen title="techStack">
+        <TechStack />
       </ListScreen>
-      <TechStack />
-      <Links />
+      <ListScreen title="links">
+        <Links />
+      </ListScreen>
     </main>
   );
 }

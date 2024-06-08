@@ -32,7 +32,7 @@ const Project = ({
   link,
 }: ProjectType) => {
   return (
-    <div className="relative p-4 max-w-[600px] mx-auto">
+    <div className="h-full relative p-4 max-w-[600px] mx-auto">
       <Image
         src={image}
         alt={`${title} image`}

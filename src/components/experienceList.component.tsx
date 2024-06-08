@@ -37,6 +37,7 @@ const ExperienceList = () => {
 
   return (
     <>
+      <h1 className="text-2xl">Experience</h1>
       {experiences.map((experience) => {
         return (
           <Experience
