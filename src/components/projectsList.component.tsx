@@ -1,6 +1,8 @@
 "use client";
 import Project from "./project.component";
 
+import TransitionScreen from "./transitionScreen.component";
+
 import { ProjectType } from "./types";
 
 const ProjectsList = () => {
@@ -31,24 +33,29 @@ const ProjectsList = () => {
   ];
 
   return (
-    <section>
-      {projects.map((project) => {
-        return (
-          <Project
-            key={project["id"]}
-            id={project["id"]}
-            title={project["title"]}
-            subtitle={project["subtitle"]}
-            desc={project["desc"]}
-            date={project["date"]}
-            image={project["image"]}
-            languages={project["languages"]}
-            github={project["github"]}
-            link={project["link"]}
-          />
-        );
-      })}
-    </section>
+    <TransitionScreen
+      id="projects"
+      imgUrl="https://i.pinimg.com/originals/62/b9/c0/62b9c02db463b4b6d07b44919267922a.gif"
+    >
+      <section>
+        {projects.map((project) => {
+          return (
+            <Project
+              key={project["id"]}
+              id={project["id"]}
+              title={project["title"]}
+              subtitle={project["subtitle"]}
+              desc={project["desc"]}
+              date={project["date"]}
+              image={project["image"]}
+              languages={project["languages"]}
+              github={project["github"]}
+              link={project["link"]}
+            />
+          );
+        })}
+      </section>
+    </TransitionScreen>
   );
 };
 

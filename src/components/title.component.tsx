@@ -1,3 +1,5 @@
+import TransitionScreen from "./transitionScreen.component";
+
 const Title = () => {
   const typingTexts = [
     "Full Stack Developer",
@@ -6,10 +8,15 @@ const Title = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full">
-      <Heading />
-      <Options />
-    </div>
+    <TransitionScreen
+      id="title"
+      imgUrl="https://i.pinimg.com/originals/59/0d/73/590d73050637dcb12e9af999f8d6437b.gif"
+    >
+      <div className="relative flex flex-col items-center justify-center w-full">
+        <Heading />
+        <Options />
+      </div>
+    </TransitionScreen>
   );
 };
 

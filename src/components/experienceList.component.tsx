@@ -1,6 +1,8 @@
 "use client";
 import Experience from "./experience.component";
 
+import TransitionScreen from "./transitionScreen.component";
+
 import { ExperienceType } from "./types";
 
 const ExperienceList = () => {
@@ -36,7 +38,10 @@ const ExperienceList = () => {
   ];
 
   return (
-    <>
+    <TransitionScreen
+      id="experience"
+      imgUrl="https://i.gyazo.com/c3b3a3970256a3fe47622f0a8a367b7e.gif"
+    >
       <h1 className="text-2xl">Experience</h1>
       {experiences.map((experience) => {
         return (
@@ -52,7 +57,7 @@ const ExperienceList = () => {
           />
         );
       })}
-    </>
+    </TransitionScreen>
   );
 };
 

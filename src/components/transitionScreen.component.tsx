@@ -3,9 +3,9 @@ const TransitionScreen = ({
   imgUrl,
   children,
 }: {
-  id: string,
+  id?: string;
   imgUrl: String;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }) => {
   return (
     <div id={id} className="relative h-[150vh]">
@@ -32,7 +32,6 @@ const ContentLayer = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="absolute top-0 h-screen flex flex-col justify-center items-center w-full">
       {children}
-      {/* <h1 className="text-4xl">{text}</h1> */}
     </div>
   );
 };
