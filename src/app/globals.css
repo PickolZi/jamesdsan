@@ -24,9 +24,15 @@
       2px 2px 0 var(--color-secondary), 3px 3px 0 var(--color-secondary),
       4px 4px 0 var(--color-secondary), 5px 5px 0 var(--color-secondary);
   }
+  .headerText {
+    @apply dim-background sticky top-[1rem] my-[1rem] text-2xl text-center;
+  }
   .minecraftButton {
     border: 2px solid black;
     background-color: var(--color-button-background);
+  }
+  .dim-background {
+    @apply bg-black/75 rounded-xl p-[1rem];
   }
 }
 
