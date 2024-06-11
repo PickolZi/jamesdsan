@@ -19,9 +19,7 @@ export default function Home() {
       <ListScreen title="techStack">
         <TechStack />
       </ListScreen>
-      <ListScreen title="links">
-        <Links />
-      </ListScreen>
+      <Links />
     </main>
   );
 }

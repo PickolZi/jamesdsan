@@ -12,7 +12,7 @@ const ListScreen = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div id={title} className="relative h-[150vh]">
+    <div id={title} className="relative h-screen">
       <Background title={title}>
         <ContentLayer>{children}</ContentLayer>
       </Background>
@@ -20,7 +20,13 @@ const ListScreen = ({
   );
 };
 
-const Background = ({ title,children }: { title: string, children: React.ReactNode }) => {
+const Background = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) => {
   return (
     <div className="sticky z-0 h-screen top-0 flex flex-col">
       <div
@@ -62,11 +68,7 @@ const TitleLayer = ({ title }: { title: string }) => {
 };
 
 const ContentLayer = ({ children }: { children: React.ReactNode }) => {
-  return (
-      <div className="h-full overflow-y-auto w-[80%]">
-        {children}
-      </div>
-  );
+  return <div className="h-full overflow-y-auto w-[80%]">{children}</div>;
 };
 
 export default ListScreen;
