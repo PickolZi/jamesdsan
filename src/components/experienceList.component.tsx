@@ -11,7 +11,7 @@ const ExperienceList = () => {
     {
       id: 1,
       position: "Research Data Services Intern",
-      location: "San Diego Super Computer (SDSC)",
+      location: "San Diego Supercomputer Center (SDSC)",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet dignissimos aliquid ullam est facilis, ex aperiam fuga aliquam dolores praesentium voluptate ut debitis iste optio earum esse ducimus sequi!",
       image: "/experiences/SDSC.jpeg",
       dateFrom: new Date(2024, 2, 20),
@@ -40,24 +40,44 @@ const ExperienceList = () => {
   return (
     <TransitionScreen
       id="experience"
-      imgUrl="https://i.gyazo.com/c3b3a3970256a3fe47622f0a8a367b7e.gif"
+      imgUrl="https://c4.wallpaperflare.com/wallpaper/226/682/452/minecraft-waterfall-video-games-wallpaper-preview.jpg"
     >
-      <h1 className="text-2xl">Experience</h1>
-      {experiences.map((experience) => {
-        return (
-          <Experience
-            key={experience["id"]}
-            id={experience["id"]}
-            position={experience["position"]}
-            location={experience["location"]}
-            desc={experience["desc"]}
-            image={experience["image"]}
-            dateFrom={experience["dateFrom"]}
-            dateTo={experience["dateTo"]}
-          />
-        );
-      })}
+      <div className="container h-screen flex flex-col justify-center">
+        <div className="relative h-[300px]">
+          <h1 className="headerText">Experience</h1>
+        </div>
+
+        <div className="flex-grow">
+          {experiences.map((experience) => {
+            return (
+              <Experience
+                key={experience["id"]}
+                id={experience["id"]}
+                position={experience["position"]}
+                location={experience["location"]}
+                desc={experience["desc"]}
+                image={experience["image"]}
+                dateFrom={experience["dateFrom"]}
+                dateTo={experience["dateTo"]}
+              />
+            );
+          })}
+        </div>
+      </div>
     </TransitionScreen>
+  );
+};
+
+const BackgroundImage = ({ imgUrl }: { imgUrl: String }) => {
+  return (
+    <div
+      className="sticky z-0 top-0 h-screen"
+      style={{
+        backgroundImage: `url(${imgUrl})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    />
   );
 };
 

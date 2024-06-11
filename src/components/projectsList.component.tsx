@@ -35,9 +35,9 @@ const ProjectsList = () => {
   return (
     <TransitionScreen
       id="projects"
-      imgUrl="https://i.pinimg.com/originals/62/b9/c0/62b9c02db463b4b6d07b44919267922a.gif"
+      imgUrl="https://wallpapers.com/images/hd/minecraft-forest-wall-bridge-8nwqlzr0b5hcm133.jpg"
     >
-      <section>
+      <div>
         {projects.map((project) => {
           return (
             <Project
@@ -54,7 +54,7 @@ const ProjectsList = () => {
             />
           );
         })}
-      </section>
+      </div>
     </TransitionScreen>
   );
 };

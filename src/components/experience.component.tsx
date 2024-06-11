@@ -37,11 +37,8 @@ const Experience = ({
         className="w-full h-[300] opacity-80"
       />
 
-      <div className="relative flex flex-col">
-        <h3>{position}</h3>
-        {location && <h4>@{location}</h4>}
-
-        <div className="absolute right-0 top-0">
+      <div className="relative flex flex-col dim-background rounded-t-none">
+        <h3 className="text-right">
           {dateFrom && (
             <span>
               {months[dateFrom.getMonth()]} {dateFrom.getFullYear()} -{" "}
@@ -54,9 +51,12 @@ const Experience = ({
           ) : (
             <span>present</span>
           )}
-        </div>
+        </h3>
 
-        <p className="mt-2 max-w-[60ch]">{desc}</p>
+        <h3>{position}</h3>
+        {location && <h3>@{location}</h3>}
+
+        {/* <p className="mt-2 max-w-[60ch]">{desc}</p> */}
       </div>
     </div>
   );
