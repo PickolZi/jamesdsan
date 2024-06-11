@@ -32,18 +32,18 @@ const Project = ({
   link,
 }: ProjectType) => {
   return (
-    <div className="h-full relative p-4 max-w-[600px] mx-auto">
+    <div className="container h-full relative mx-auto">
       <Image
         src={image}
         alt={`${title} image`}
-        width={300}
-        height={300}
-        className="w-full max-w-[600px]"
+        width={256}
+        height={256}
+        className="w-full min-w-[256px]"
       />
 
-      <div className="relative">
+      <div className="relative dim-background">
         <p>{title}</p>
-        <p>{subtitle}</p>
+        {/* <p>{subtitle}</p> */}
         <p className="max-w-[60ch]">{desc}</p>
 
         <p className="absolute top-0 right-0">
