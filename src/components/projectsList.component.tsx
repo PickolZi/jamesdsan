@@ -14,7 +14,7 @@ const ProjectsList = () => {
       subtitle: "Organize your ebay inventory",
       desc: "An automotive parts shop had trouble organizing their ebay inventory, so I created Itemiz, a web application that connects to your existing ebay inventory with a simple and easy to use dashboard to filter and update item locations. Notifying the merchant when a customer has made a purchase, Itemiz was able to scale their online business 300% from struggling to find items within their inventory of 500 ebay items, to knowing the locations of 1500+ ebay items.",
       date: new Date(2024, 2, 20),
-      image: "/projects/project_spotify_music_downloader.png",
+      image: "/projects/project_itemiz.png",
       languages: ["Ebay API", "React", "Flask", "Firebase", "SQLite"],
       github: "https://github.com/PickolZi/Ebay-Inventory-Management",
       link: "https://www.bassetinventory.com",

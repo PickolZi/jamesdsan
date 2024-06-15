@@ -36,9 +36,9 @@ const Project = ({
       <Image
         src={image}
         alt={`${title} image`}
-        width={256}
-        height={256}
-        className="w-full min-w-[256px]"
+        width={1920}
+        height={1080}
+        // className="w-full min-w-[256px]"
       />
 
       <div className="relative dim-background">
