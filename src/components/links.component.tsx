@@ -33,7 +33,7 @@ const Links = () => {
           </li>
           <li className="hover:bg-stone-800/80">
             <a
-              href="https://drive.google.com/file/d/17VIidg5zEencKOimlHa-tpipZD0tAUM0/view?sp=drive_link"
+              href="https://drive.google.com/file/d/1JwBZLiAGV7ARbyirOSSfedkvGbOZurJZ/view?usp=sharing"
               target="_blank"
               className="flex flex-row gap-[0.25rem]"
             >

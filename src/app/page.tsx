@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="bg-black">
       <Title />
-      <TransitionScreen imgUrl="https://i.redd.it/841666uly00b1.gif" />
+      {/* <TransitionScreen imgUrl="https://i.redd.it/841666uly00b1.gif" /> */}
       <AboutMe />
       <ExperienceList />
       <ProjectsList />
